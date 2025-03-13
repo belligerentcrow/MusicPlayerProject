@@ -30,7 +30,7 @@ public class FullPlaylistMode implements MyDisplay{
               int i = 1;
               System.out.println("-----");
               for (Song song : songlib.getMyLibrary()){
-                     System.out.println(i + " -- " + song);
+                     System.out.println(i + " -- " + song.getTitle() + " by " + song.getAuthor());
                      i++;
               }
               System.out.println("-----");
