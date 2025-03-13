@@ -67,6 +67,13 @@ public class SongLibrary {
         }
     }
 
+    public void modifyPlaylist(List<Song> modifiedList){
+        this.myLibrary = modifiedList;
+    }
+    public void modifyWhereInList(int modifiedHead){
+        this.whereInList = modifiedHead;
+    }
+
     public boolean isEmpty(){
         return myLibrary.isEmpty();
     }
