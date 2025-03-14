@@ -3,6 +3,6 @@
 /**State interface 
  */
 public interface MyDisplay {
-    public void visualizza(Song s);
+    public void visualize(Song s);
     public String getModeTitle();
 }

@@ -15,7 +15,7 @@ public class FullPlaylistMode implements MyDisplay{
         * @param s : Song that needs to be visualized at the end of the printed
         * playlist.
         */
-       public void visualizza(Song s){
+       public void visualize(Song s){
               System.out.println("Printing library...");
               printAllList();
               System.out.println(songlib.getWhereInList()+1 + " ------ " +s);

@@ -34,7 +34,7 @@ public class MusicPlayer{
 
     public void playMusic(){
         if(musiclibr.getCurrentSong().isPresent()){
-            displayState.visualizza(musiclibr.getCurrentSong().get());
+            displayState.visualize(musiclibr.getCurrentSong().get());
         }else{
             System.out.println("........");
         }

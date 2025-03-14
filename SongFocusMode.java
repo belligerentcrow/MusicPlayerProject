@@ -9,7 +9,7 @@ public class SongFocusMode implements MyDisplay{
     public SongFocusMode(SongLibrary sl){
         this.songlib = sl;
     }
-    public void visualizza(Song s){
+    public void visualize(Song s){
         System.out.println("Playing : " + (songlib.getWhereInList()+1) + " -- " + s);
     }
 
