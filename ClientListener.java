@@ -1,7 +1,7 @@
 public class ClientListener {
     
     public static void main(String[] args) {
-        //Creating a SongLibrary, a MusicPlayer, and an AdvancedControl class
+        //Creating instances of SongLibrary, a MusicPlayer, and an AdvancedControl
         SongLibrary myLibrary = new SongLibrary();
         MusicPlayer vlc = new MusicPlayer(myLibrary);
         AdvancedControl controls = new AdvancedControl(myLibrary);
@@ -32,7 +32,7 @@ public class ClientListener {
         myLibrary.addSong(song10);
 
         //using the "vlc" player
-        /* 
+        
         vlc.playMusic();
         vlc.switchMode();
         vlc.nextSong();
@@ -54,7 +54,7 @@ public class ClientListener {
 
         vlc.switchMode();
         vlc.playMusic();
-        */
+        
         //Demostration of the AdvancedControl controls -- Sorter
         controls.sortByTitle();
         vlc.playMusic();
@@ -66,9 +66,10 @@ public class ClientListener {
         vlc.playMusic();
 
         System.out.println("Controls = Find songs by Queen");
-        
+
         //Demostration of the AdvancedControl controls -- Finder
         controls.findByWhom("Queen");
+        
         vlc.playMusic();
 
         System.out.println("Back to library");
