@@ -8,13 +8,17 @@ public class AdvancedControl {
     private Finder finder;
     private Optional<Song> singleQuery;
     private List<Song> currentUserQuery;
+
     private List<Song> libraryStoring;
+    private int headStoring;
 
     public AdvancedControl(SongLibrary sl){
         this.songlib = sl;
         this.sorter = new Sorter(sl);
         this.finder = new Finder(sl);
         this.currentUserQuery = new ArrayList<>();
+
+        this.headStoring = 0;
         this.libraryStoring = new ArrayList<>();
     }
 
@@ -43,8 +47,11 @@ public class AdvancedControl {
     public void findByWhom(String authr){
         clearQuery();
         this.libraryStoring = this.songlib.getMyLibrary();
+        this.headStoring = this.songlib.getWhereInList();
+
         this.currentUserQuery = finder.songsByWhom(authr);
         this.songlib.modifyPlaylist(currentUserQuery);
+        this.songlib.modifyWhereInList(0);
     }
 
     public void findAllAuthors(){
@@ -55,6 +62,7 @@ public class AdvancedControl {
 
     public void backToLibrary(){
         this.songlib.modifyPlaylist(libraryStoring);
+        this.songlib.modifyWhereInList(headStoring);
     }
 
     public void modifySongLib(SongLibrary sl){
@@ -63,6 +71,7 @@ public class AdvancedControl {
         finder.changeLibrary(sl);
     }
     public void clearQuery(){
+        this.headStoring = 0;
         if(!(currentUserQuery.isEmpty()))
             this.currentUserQuery.clear();
     }
