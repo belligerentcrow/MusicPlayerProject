@@ -66,6 +66,7 @@ public class ClientListener {
         vlc.playMusic();
 
         System.out.println("Controls = Find songs by Queen");
+        
         //Demostration of the AdvancedControl controls -- Finder
         controls.findByWhom("Queen");
         vlc.playMusic();
