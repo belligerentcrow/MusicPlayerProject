@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class AdvancedControl {
     private SongLibrary songlib;
     private Sorter sorter;
     private Finder finder;
+    private Optional<Song> singleQuery;
     private List<Song> currentUserQuery;
     private List<Song> libraryStoring;
 
@@ -31,8 +33,11 @@ public class AdvancedControl {
     //Finders
     public void findLongest(){
         clearQuery();
-        this.currentUserQuery.add(finder.longestSongFinder());
-        this.songlib.modifyWhereInList(songlib.getMyLibrary().indexOf(currentUserQuery.get(0)));
+        this.singleQuery = finder.longestSongFinder();
+        if(singleQuery.isPresent()){
+            this.songlib.modifyWhereInList(songlib.getMyLibrary().indexOf(singleQuery.get()));
+            this.currentUserQuery.add(singleQuery.get());
+        }
     }
 
     public void findByWhom(String authr){

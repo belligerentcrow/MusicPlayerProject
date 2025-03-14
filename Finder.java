@@ -1,13 +1,12 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collector;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Finder {
     private SongLibrary songlib;
     private List<Song> queryList;
-    private Song querySingle;
 
     public Finder(SongLibrary sl){
         this.songlib = sl;
@@ -15,9 +14,11 @@ public class Finder {
     }
 
     //1 - find the longest song of the playlist
-    public Song longestSongFinder(){
-        this.querySingle = songlib.getMyLibrary().stream().max(Comparator.comparing(Song::getSecondsDuration)).get();
-        return querySingle;
+    public Optional<Song> longestSongFinder(){
+        if(!(songlib.isEmpty())){
+            return Optional.of(songlib.getMyLibrary().stream().max(Comparator.comparing(Song::getSecondsDuration)).get());
+        }
+        return Optional.empty();
     }
 
     //2 - find all the songs by X authors, if present
