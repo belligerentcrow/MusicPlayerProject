@@ -25,7 +25,7 @@ public class MusicPlayer{
             displayState = new FullPlaylistMode(this.musiclibr);
             isFocus = false;
         }else{
-            displayState = new SongFocusMode(musiclibr);
+            displayState = new SongFocusMode(this.musiclibr);
             isFocus = true;
         }
         System.out.println("Switching to... " + displayState.getModeTitle());
