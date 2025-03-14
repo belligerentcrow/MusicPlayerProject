@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Gf8aja0_6aJ7O7x1QdIq" name="Page-1">
-        <mxGraphModel dx="698" dy="1620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="826" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -10,11 +10,11 @@
                 <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="2" vertex="1">
                     <mxGeometry y="50" width="210" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="+ visualizza(Song s): void&#xa;+getModeTitle() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                <mxCell id="5" value="+ visualize(Song s): void&#xa;+getModeTitle() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="58" width="210" height="52" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="SongLibrary" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="640" y="550" width="240" height="250" as="geometry"/>
+                    <mxGeometry x="640" y="550" width="240" height="220" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="- myLibrary : List&lt;Song&gt; &#xa;- whereInList : int&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="6" vertex="1">
                     <mxGeometry y="26" width="240" height="44" as="geometry"/>
@@ -22,8 +22,8 @@
                 <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="6" vertex="1">
                     <mxGeometry y="70" width="240" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="+ SongLibrary()&#xa;+ next() : Optional&lt;Song&gt;&#xa;+ previous () : Optional&lt;Song&gt;&#xa;+ addSong (s : Song) : void &#xa;+ removeCurrentSong() : void &#xa;+ getCurrentSong () : Optional&lt;Song&gt;&#xa;+ isEmpty () : boolean&#xa;+ GETTERS&#xa;+ SETTERS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="6" vertex="1">
-                    <mxGeometry y="78" width="240" height="172" as="geometry"/>
+                <mxCell id="9" value="+ SongLibrary()&#xa;+ next() : Optional&lt;Song&gt;&#xa;+ previous () : Optional&lt;Song&gt;&#xa;+ addSong (s : Song) : void &#xa;+ removeCurrentSong() : void &#xa;+ getCurrentSong () : Optional&lt;Song&gt;&#xa;+ isEmpty () : boolean&#xa;+ GETTERS&#xa;+ SETTERS " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="6" vertex="1">
+                    <mxGeometry y="78" width="240" height="142" as="geometry"/>
                 </mxCell>
                 <mxCell id="31" style="edgeStyle=none;html=1;" parent="1" source="10" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -36,16 +36,16 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="10" value="MusicPlayer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="270" y="30" width="270" height="222" as="geometry"/>
+                    <mxGeometry x="270" y="30" width="270" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="- musiclibr: SongLibrary&#xa;- displayState : MyDisplay&#xa;- isFocus : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="10" vertex="1">
                     <mxGeometry y="30" width="270" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="10" vertex="1">
-                    <mxGeometry y="80" width="270" height="36" as="geometry"/>
+                    <mxGeometry y="80" width="270" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="13" value="+ MusicPlayer(musicLib : SongLibrary)&#xa;+ switchMode() : void&#xa;+ playMusic() : void&#xa;+ nextSong () : void&#xa;+ prevSong () : void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="10" vertex="1">
-                    <mxGeometry y="116" width="270" height="106" as="geometry"/>
+                    <mxGeometry y="90" width="270" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="28" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="14" target="16" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -58,7 +58,7 @@
                 <mxCell id="29" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="14" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="14" target="9" edge="1">
+                <mxCell id="30" style="edgeStyle=none;html=1;" parent="1" source="14" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="190" y="280"/>
@@ -67,7 +67,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="14" target="41">
+                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="14" target="41" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="ClientListener" style="html=1;" parent="1" vertex="1">
@@ -77,28 +77,28 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="Song" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="380" y="510" width="220" height="168" as="geometry"/>
+                    <mxGeometry x="330" y="514" width="270" height="168" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="- title : String&#xa;- author : String&#xa;- secondsDuration : int&#xa;- publishingYear : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="16" vertex="1">
-                    <mxGeometry y="26" width="220" height="64" as="geometry"/>
+                    <mxGeometry y="26" width="270" height="64" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="16" vertex="1">
-                    <mxGeometry y="90" width="220" height="8" as="geometry"/>
+                    <mxGeometry y="90" width="270" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="+ Song( t: String, au : String, durat : int)&#xa;+ toString() : String&#xa;+ GETTERS " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="16" vertex="1">
-                    <mxGeometry y="98" width="220" height="70" as="geometry"/>
+                <mxCell id="19" value="+ Song( t: String, au : String, durat : int, yr : int)&#xa;+ toString() : String&#xa;+ GETTERS " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="16" vertex="1">
+                    <mxGeometry y="98" width="270" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" value="FullPlaylistMode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="640" y="250" width="210" height="190" as="geometry"/>
+                    <mxGeometry x="640" y="250" width="210" height="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="- songlib : SongLibrary &#xa;- modeTitle : String&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="20" vertex="1">
-                    <mxGeometry y="26" width="210" height="74" as="geometry"/>
+                    <mxGeometry y="26" width="210" height="44" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="20" vertex="1">
-                    <mxGeometry y="100" width="210" height="8" as="geometry"/>
+                    <mxGeometry y="70" width="210" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="+ FullPLaylistMode (sl : SongLibrary) &#xa;+ visualizza (s : Song) : void&#xa;- printAllList () : void &#xa;+ getModeTitle () : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="20" vertex="1">
-                    <mxGeometry y="108" width="210" height="82" as="geometry"/>
+                <mxCell id="23" value="+ FullPlaylistMode (sl : SongLibrary) &#xa;+ visualize (s : Song) : void&#xa;+ getModeTitle () : String&#xa;- printAllList () : void " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="20" vertex="1">
+                    <mxGeometry y="78" width="210" height="82" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="SongFocusMode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="900" y="280" width="240" height="146" as="geometry"/>
@@ -109,7 +109,7 @@
                 <mxCell id="26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="24" vertex="1">
                     <mxGeometry y="76" width="240" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="+ SongFocusMode(sl : SongLIbrary)&#xa;+ visualizza (s : Song) : void&#xa;+ getModeTitle () : String " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="24" vertex="1">
+                <mxCell id="27" value="+ SongFocusMode(sl : SongLibrary)&#xa;+ visualize (s : Song) : void&#xa;+ getModeTitle () : String " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="24" vertex="1">
                     <mxGeometry y="84" width="240" height="62" as="geometry"/>
                 </mxCell>
                 <mxCell id="37" style="edgeStyle=none;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.286;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="23" target="6" edge="1">
@@ -132,12 +132,12 @@
                         <mxPoint x="860" y="200" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="41" target="48">
+                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="41" target="48" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="80" y="680" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="47" style="edgeStyle=none;html=1;exitX=0.611;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.007;entryY=0.106;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="44" target="52">
+                <mxCell id="47" style="edgeStyle=none;html=1;exitX=0.611;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.007;entryY=0.106;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="44" target="52" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="200" y="680" as="targetPoint"/>
                         <Array as="points">
@@ -145,19 +145,19 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="41" value="AdvancedControl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="10" y="300" width="250" height="270" as="geometry"/>
+                <mxCell id="41" value="AdvancedControl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="300" width="250" height="320" as="geometry"/>
                 </mxCell>
-                <mxCell id="42" value="- songlib: SongLibrary&#xa;- sorter: Sorter&#xa;- finder : Finder&#xa;- currentUserQuery : List&lt;Song&gt;&#xa;- libraryStoring : List&lt;Song&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="41">
-                    <mxGeometry y="26" width="250" height="84" as="geometry"/>
+                <mxCell id="42" value="- songlib: SongLibrary&#xa;- sorter: Sorter&#xa;- finder : Finder&#xa;- singleQuery : Optional&lt;Song&gt;&#xa;- currentUserQuery : List&lt;Song&gt;&#xa;- libraryStoring : List&lt;Song&gt;&#xa;- headStoring : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="41" vertex="1">
+                    <mxGeometry y="26" width="250" height="114" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="41">
-                    <mxGeometry y="110" width="250" height="10" as="geometry"/>
+                <mxCell id="43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="41" vertex="1">
+                    <mxGeometry y="140" width="250" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" value="+ AdvancedControl (sl : songLibrary) &#xa;+ sortByTitle() : void&#xa;+ sortByAuthor () : void&#xa;+ sortByYear () : void&#xa;+ findLongest () : void&#xa;+ findByWhom (authr : String) : void&#xa;+ findAllAuthors () : void&#xa;+backToLibrary () : void&#xa;+ modifySongLib( sl : SongLibrary) : void&#xa;+ clearQuery () : void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="41">
-                    <mxGeometry y="120" width="250" height="150" as="geometry"/>
+                <mxCell id="44" value="+ AdvancedControl (sl : songLibrary) &#xa;+ sortByTitle() : void&#xa;+ sortByAuthor () : void&#xa;+ sortByYear () : void&#xa;+ findLongest () : void&#xa;+ findByWhom (authr : String) : void&#xa;+ findAllAuthors () : void&#xa;+backToLibrary () : void&#xa;+ modifySongLib( sl : SongLibrary) : void&#xa;+ clearQuery () : void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="41" vertex="1">
+                    <mxGeometry y="150" width="250" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="57" style="edgeStyle=none;html=1;exitX=0.357;exitY=0.957;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.81;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="51" target="9">
+                <mxCell id="57" style="edgeStyle=none;html=1;exitX=0.357;exitY=0.957;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.81;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="51" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="831.4285714285714" y="1030" as="targetPoint"/>
                         <Array as="points">
@@ -166,34 +166,34 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="48" value="Sorter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="50" y="820" width="230" height="160" as="geometry"/>
+                <mxCell id="48" value="Sorter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="820" width="230" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="- songlib : SongLibrary&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
-                    <mxGeometry y="26" width="230" height="34" as="geometry"/>
+                <mxCell id="49" value="- songlib : SongLibrary&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="48" vertex="1">
+                    <mxGeometry y="26" width="230" height="24" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="48">
-                    <mxGeometry y="60" width="230" height="8" as="geometry"/>
+                <mxCell id="50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="48" vertex="1">
+                    <mxGeometry y="50" width="230" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="+ Sorter( sl : SongLibrary) &#xa;+ sortByTitleName() : void&#xa;+ sortByAuthorName () : void&#xa;+ sortByPublishingYear () : void&#xa;+ changeLibrary  (sl : SongLibrary) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
-                    <mxGeometry y="68" width="230" height="92" as="geometry"/>
+                <mxCell id="51" value="+ Sorter( sl : SongLibrary) &#xa;+ sortByTitleName() : void&#xa;+ sortByAuthorName () : void&#xa;+ sortByPublishingYear () : void&#xa;+ changeLibrary  (sl : SongLibrary) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="48" vertex="1">
+                    <mxGeometry y="58" width="230" height="92" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" style="edgeStyle=none;html=1;" edge="1" parent="1" source="52" target="19">
+                <mxCell id="58" style="edgeStyle=none;html=1;" parent="1" source="52" target="19" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" value="Finder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="740" width="270" height="190" as="geometry"/>
+                <mxCell id="52" value="Finder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="740" width="270" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="53" value="- songlib : SongLibrary&#xa;- queryList : List&lt;Song&gt;&#xa;- querySingle : Song" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="52">
-                    <mxGeometry y="26" width="270" height="54" as="geometry"/>
+                <mxCell id="53" value="- songlib : SongLibrary&#xa;- queryList : List&lt;Song&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="52" vertex="1">
+                    <mxGeometry y="26" width="270" height="44" as="geometry"/>
                 </mxCell>
-                <mxCell id="54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="52">
-                    <mxGeometry y="80" width="270" height="8" as="geometry"/>
+                <mxCell id="54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="52" vertex="1">
+                    <mxGeometry y="70" width="270" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="55" value="+ Finder(sl : SongLibrary) &#xa;+ longestSongFinder () : Song&#xa;+ songsByWhom (author : String) : List&lt;Song&gt;&#xa;+ songAuthors () : List&lt;String&gt;&#xa;+ clearQuery () : void&#xa;+ changeLibrary (sl : SongLibrary) : void&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="52">
-                    <mxGeometry y="88" width="270" height="102" as="geometry"/>
+                <mxCell id="55" value="+ Finder(sl : SongLibrary) &#xa;+ longestSongFinder () : Optional&lt;Song&gt;&#xa;+ songsByWhom (author : String) : List&lt;Song&gt;&#xa;+ songAuthors () : List&lt;String&gt;&#xa;+ clearQuery () : void&#xa;+ changeLibrary (sl : SongLibrary) : void&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="52" vertex="1">
+                    <mxGeometry y="78" width="270" height="102" as="geometry"/>
                 </mxCell>
-                <mxCell id="56" style="edgeStyle=none;html=1;entryX=0.194;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="55" target="9">
+                <mxCell id="56" style="edgeStyle=none;html=1;entryX=0.194;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="55" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="687" y="879"/>
